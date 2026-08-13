@@ -1,0 +1,4 @@
+interface:
+  display_name: "把产品拆碎并重组成 Figma"
+  short_description: "把整个产品拆成模块、页面、按钮、跳转与商业化，不做版本迭代分析"
+  default_prompt: "Use $figma-prototype-decomposer to fully break the entire evidenced product into modules, pages, states, controls, destinations, rules, and commercialization paths, then reconstruct it as one editable Figma map. Do not include possible version iterations."
