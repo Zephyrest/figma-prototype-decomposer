@@ -1,0 +1,62 @@
+{
+  "product": "Demo Companion App",
+  "evidence_scope": "synthetic whole-product example",
+  "evidence_collected_at": "2026-08",
+  "pages": [
+    {
+      "id": "P02",
+      "title": "Chat workspace",
+      "module": "Conversation",
+      "group": "Chat controls",
+      "level": "L1",
+      "parent": null,
+      "kind": "page",
+      "source": "synthetic example",
+      "commercial": "currency_entry",
+      "confidence": "fact"
+    },
+    {
+      "id": "P03",
+      "title": "Purchase credits",
+      "module": "Conversation",
+      "group": "Chat controls",
+      "level": "L3",
+      "parent": "P02",
+      "kind": "modal",
+      "source": "synthetic example",
+      "commercial": "currency_recharge",
+      "confidence": "fact"
+    },
+    {
+      "id": "P04",
+      "title": "Return to chat",
+      "module": "Conversation",
+      "group": "Chat controls",
+      "level": "S",
+      "parent": "P02",
+      "kind": "state",
+      "source": "synthetic example",
+      "commercial": "subscription_return",
+      "confidence": "fact"
+    }
+  ],
+  "interactions": [
+    {
+      "from": "P02",
+      "hotspot": "Credits button",
+      "action": "pay",
+      "to": "P03",
+      "commercial": true,
+      "confidence": "fact"
+    },
+    {
+      "from": "P03",
+      "hotspot": "Close",
+      "action": "close",
+      "to": "P04",
+      "commercial": true,
+      "confidence": "fact"
+    }
+  ],
+  "unknowns": []
+}
